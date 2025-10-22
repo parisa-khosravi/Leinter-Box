@@ -34,7 +34,7 @@ Leitner Box/
 ✅ **Card Addition Process**
 - Below is a visual flow of how a new flashcard is added to the system:
 
-![Add Card Flowchart](1.png)
+![Add Card Flowchart](1.PNG)
 
 ✅ **Leitner Review System (Spaced Repetition)**  
 - Reviews only **due cards** (`last_review <= today`)  
