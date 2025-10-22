@@ -8,6 +8,7 @@ This app allows users to register, log in, add flashcards, and review them over 
 ## 📁 Project Structure
 
 Leitner Box/
+
 │
 ├── main.py              → Entry point of the program  
 ├── auth.py              → User registration and login  
@@ -71,7 +72,7 @@ Leitner Box/
 
 2. Create the database:
   ```bash
-  CREATE DATABASE leitner_db;
+  CREATE DATABASE leitner_db
 
 3. Run the schema file:
   ```bash
