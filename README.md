@@ -9,7 +9,6 @@ This app allows users to register, log in, add flashcards, and review them over 
 
 Leitner Box/
 
-│
 ├── main.py              → Entry point of the program  
 ├── auth.py              → User registration and login  
 ├── database.py          → PostgreSQL operations  
@@ -71,12 +70,12 @@ Leitner Box/
 1. Open PostgreSQL (terminal or pgAdmin)
 
 2. Create the database:
-  ```bash
-  CREATE DATABASE leitner_db
+   ```bash
+   CREATE DATABASE leitner_db;
 
 3. Run the schema file:
-  ```bash
-  \i schemas.sql
+   ```bash
+   \i schemas.sql
 
 ---
 
@@ -85,22 +84,24 @@ Leitner Box/
 1. Open your project folder
 
 2. Run the app in terminal:
-  ```bash
-  python main.py
+   ```bash
+   python main.py
 
 3. Main menu:
- === LEITNER BOX ===
- 1) Register
- 2) Login
- 3) Exit
+   ```bash
+  === LEITNER BOX ===
+  1) Register
+  2) Login
+  3) Exit
 
 4. After login:
- === DASHBOARD ===
- 1) Show Box
- 2) Add Card
- 3) Modify Card
- 4) Review Cards
- 5) Logout
+   ```bash
+  === DASHBOARD ===
+  1) Show Box
+  2) Add Card
+  3) Modify Card
+  4) Review Cards
+  5) Logout
 
 ---
 
