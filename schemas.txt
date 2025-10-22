@@ -1,0 +1,31 @@
+-- ==========================================
+-- 📘 Leitner Box Database Schema
+-- Description: PostgreSQL schema for Leitner flashcard system
+-- ==========================================
+
+
+-- ======================
+-- 🧑 USERS TABLE
+-- ======================
+-- Stores all registered users for authentication.
+-- Each user has a unique username and a bcrypt-hashed password.
+CREATE TABLE IF NOT EXISTS users (
+    id SERIAL PRIMARY KEY,                     -- Unique user ID
+    username VARCHAR(50) UNIQUE NOT NULL,      -- Username (must be unique)
+    password VARCHAR(255) NOT NULL             -- Hashed password (bcrypt)
+);
+
+
+-- ======================
+-- 🃏 CARDS TABLE
+-- ======================
+-- Stores flashcards belonging to users.
+-- Each card is linked to a user and has Leitner box metadata.
+CREATE TABLE IF NOT EXISTS cards (
+    id SERIAL PRIMARY KEY,                     -- Unique card ID
+    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,  -- User ID (foreign key)
+    slot INTEGER DEFAULT 1,                    -- Leitner slot number (1–6)
+    question TEXT NOT NULL,                    -- Flashcard question text
+    answer TEXT NOT NULL,                      -- Flashcard answer text
+    last_review DATE DEFAULT CURRENT_DATE      -- Date of last review
+);
