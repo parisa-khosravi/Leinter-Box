@@ -138,7 +138,7 @@ Leitner Box/
  • dashboard.py: main user menu
  • review.py: Leitner logic
 
-⸻
+---
 
 ## 💡 Future Improvements
 
@@ -147,7 +147,7 @@ Leitner Box/
 - Add category/tag system for cards
 - Build a web version (Django) or GUI app
 
-⸻
+---
 
 ## 👨‍💻 Authors
 
