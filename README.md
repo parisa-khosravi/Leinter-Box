@@ -9,6 +9,7 @@ This app allows users to register, log in, add flashcards, and review them over 
 
 Leitner Box/
 
+│
 ├── main.py              → Entry point of the program  
 ├── auth.py              → User registration and login  
 ├── database.py          → PostgreSQL operations  
@@ -114,6 +115,7 @@ Leitner Box/
 | id	   | SERIAL	User  | ID              |
 | username | VARCHAR(100) | Unique username |
 | password | TEXT         | Hashed password |
+
 
 - Table: cards:
 
