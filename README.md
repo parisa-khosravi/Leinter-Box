@@ -7,14 +7,16 @@ This app allows users to register, log in, add flashcards, and review them over 
 
 ## 📁 Project Structure
 
-Leitner-Box/
+Leitner Box/
 │
-├── auth.py           # Handles user registration & login
-├── database.py       # PostgreSQL connection and CRUD logic
-├── dashboard.py      # Main user interface after login
-├── review.py         # Leitner spaced-repetition logic
-├── main.py           # Entry point of the program
-└── schemas.sql       # SQL schema for PostgreSQL tables
+├── main.py              → Entry point of the program  
+├── auth.py              → User registration and login  
+├── database.py          → PostgreSQL operations  
+├── dashboard.py         → Main dashboard (CLI)  
+├── review.py            → Leitner spaced repetition logic  
+├── schemas.sql          → Database schema  
+├── .gitignore           → Git ignore rules  
+└── README.md            → Project documentation
 
 ---
 
@@ -59,7 +61,7 @@ Leitner-Box/
 - **PostgreSQL 15+**
 - Install dependencies:
   ```bash
- pip install psycopg2-binary bcrypt
+  pip install psycopg2-binary bcrypt
 
 ---
 
@@ -68,10 +70,12 @@ Leitner-Box/
 1. Open PostgreSQL (terminal or pgAdmin)
 
 2. Create the database:
- CREATE DATABASE leitner_db;
+  ```bash
+  CREATE DATABASE leitner_db;
 
 3. Run the schema file:
- \i schemas.sql
+  ```bash
+  \i schemas.sql
 
 ---
 
@@ -80,7 +84,8 @@ Leitner-Box/
 1. Open your project folder
 
 2. Run the app in terminal:
- python main.py
+  ```bash
+  python main.py
 
 3. Main menu:
  === LEITNER BOX ===
@@ -144,6 +149,10 @@ Leitner-Box/
 
 ## 👨‍💻 Authors
 
-Mohammad Moghanloo                       Parisa Khosravi
-📧 Email: mohamad.mgn.89@gmail.com       📧 Email: pkhosravi21@gmail.com
-🐙 GitHub: mohamad-mgn                   🐙 GitHub: parisa-khosravi
+Mohammad Moghanloo
+📧 Email: mohamad.mgn.89@gmail.com
+🐙 GitHub: mohamad-mgn
+
+Parisa Khosravi
+📧 Email: pkhosravi21@gmail.com
+🐙 GitHub: parisa-khosravi
