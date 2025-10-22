@@ -31,6 +31,11 @@ Leitner Box/
 - Add, edit, and delete cards  
 - Automatically assigned to one of **6 Leitner slots**  
 
+✅ **Card Addition Process**
+- Below is a visual flow of how a new flashcard is added to the system:
+
+![Add Card Flowchart](A_flowchart_in_the_image_illustrates_a_Leitner_Box.png)
+
 ✅ **Leitner Review System (Spaced Repetition)**  
 - Reviews only **due cards** (`last_review <= today`)  
 - Each slot defines a specific review interval:  
