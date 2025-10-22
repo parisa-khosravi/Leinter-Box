@@ -89,19 +89,19 @@ Leitner Box/
 
 3. Main menu:
    ```bash
-  === LEITNER BOX ===
-  1) Register
-  2) Login
-  3) Exit
+   === LEITNER BOX ===
+   1) Register
+   2) Login
+   3) Exit
 
 4. After login:
    ```bash
-  === DASHBOARD ===
-  1) Show Box
-  2) Add Card
-  3) Modify Card
-  4) Review Cards
-  5) Logout
+   === DASHBOARD ===
+   1) Show Box
+   2) Add Card
+   3) Modify Card
+   4) Review Cards
+   5) Logout
 
 ---
 
